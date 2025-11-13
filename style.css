@@ -2,20 +2,34 @@ body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
             background-color: #f4f4f4;
         }
-.container {
-            max-width: 900px;
-            margin: 0 auto;
+header {
+                text-align: center;
+                background-color: #243A4E;
+                border: #243A4E;
+                padding: 5px;
+                border-radius: 0px 0px 5px 5px;
+        }
+#data_privacy, #gdpr, #cookie, #consent_management {
+    display: flex;
+    align-items: flex-start;
+    color: black;
+    }
+.section {
+            display: flex;
+            flex-direction: column;
+            -ms-flex-align: center;
+            max-width: 90%;
+            margin: 8% auto;
             background-color: white;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: justify;
             }
  h1 {
-     color: #333;
+     color: white;
     }
-.section {
-         margin: 20px 0;
-         }
+
