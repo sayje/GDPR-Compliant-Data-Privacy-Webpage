@@ -93,7 +93,6 @@ h1 a:hover {
 .modal {
             display: none;
             position: fixed;
-            z-index: 1;
             left: 0;
             top: 0;
             width: 100%;
@@ -136,11 +135,11 @@ h1 a:hover {
             border-radius: 4px;
         }
         button {
-            background-color: #007bff;
+            background-color: #243A4E;
             color: white;
             cursor: pointer;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color: #1D2E3E;
         }
 
