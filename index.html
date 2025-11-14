@@ -7,22 +7,42 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <main class="container">
         <header>
-        <h1>Data Privacy: RA 10173, GDPR, Cookie Policy, and Consent Management</h1>
-        <p>...</p>
+        <h1 class="header-title">
+        <a href="#ra10173">Data Privacy: RA 10173</a>, 
+        <a href="#gdpr">GDPR</a>, 
+        <a href="#cookie">Cookie Policy</a>, and 
+        <a href="#consent">Consent Management</a>
+        </h1>
         </header>
         
-        <div class="section">
+        <!-- Image & Caption-->
+        <div class="image">
+            <img src="BLOGS-IMAGES-CLA-min.png">
+            <figcaption
+             class="caption">
+                Photo By: <a href="https://carpolaw.com/data-privacy-philippines/" target="_blank">
+                https://carpolaw.com/data-privacy-philippines/
+                        </a>
+            </figcaption>
+            <p style="font-weight: bold; color: black; font-size: medium;">By Jyssah Mae Pablo, BSIT-311</p>
+            <p>Published: November 14, 2025</p>
+        </div>
+
+        <!--Articles-->
+        <div class="section" id="ra10173">
             <h2 id="data_privacy">Data Privacy: RA 10173</h2>
             <p>The Philippines Republic Act No. 10173, also known as the Data Privacy Act of 2012, and its Implementing Rules and Regulations (IRR), aim to protect individuals' personal information in both government and private sector systems.  The law aims to protect personal data security while promoting transparency and trust in digital systems, ensuring privacy without jeopardizing the free flow of information necessary for innovation and growth.  The National Privacy Commission (NPC) is designated as the primary regulatory authority in charge of ensuring the Act's implementation and compliance.
+            <br>
             <br>
             The Data Privacy Act applies to all types of personal data, whether recorded in paper or electronic form, and covers both automated and manual processing systems. It establishes the rights of data subjects, including the right to be informed, the right to access, the right to object, and the right to erasure or blocking of personal data.  Organizations are required to implement appropriate security measures to protect personal data from unauthorized access, disclosure, alteration, or destruction. They must also appoint a Data Protection Officer (DPO) responsible for ensuring compliance with the Act and handling data privacy-related matters within the organization (Republic Act No. 10173 Philippines, n.d.).
             </p>
         </div>
         
-        <div class="section">
-            <h2 id="gdpr">General Data Protection Regulation (GDPR) Compliance</h2>
+        <div class="section" id="gdpr">
+            <h2 id="gdpr_compliance">General Data Protection Regulation (GDPR) Compliance</h2>
             <p>The General Data Protection Regulation (GDPR), which went into effect on May 25, 2018, is the world's strictest security and privacy law.  Its purpose was to provide individuals with control over their personal data by establishing standards for the collection and processing of personal information for both EU and non-EU residents (Team, 2025).
             <br>
             <br>
@@ -34,7 +54,7 @@
             <br>
             Any website that attracts European visitors, regardless of location, must follow these guidelines, which ensure the protection of personal data and hold companies accountable for how they handle such information. GDPR replaces the previous Data Protection Directive, strengthening consumer privacy rights while also standardizing data protection across all EU member countries (Team, 2025).</p>
         </div>
-        <div class="section">
+        <div class="section" id="cookie">
             <h2 id="cookie_policy">Cookie Policy</h2>
             <p>Cookies are small text files sent to your browser by websites you visit. They assist the website in remembering information about your visit, which can make returning to the site easier and the site more useful to you. Similar technologies, such as unique identifiers for apps or devices, pixel tags, and local storage, can all perform the same function.
             <br>
@@ -45,14 +65,38 @@
             Website cookies are an essential part of a website.  hey improve the user experience while also collecting data about the user's behavior on the site. This information can then be used to create better content, personalized ads, and other features (Staff, 2025).
             </p>
         </div>
-        <div class="section">
+        <div class="section" id="consent">
             <h2 id="consent_management">Consent Management</h2>
             <p>Consent management is the process of obtaining, recording, and managing user consent to collect and use their personal information. This includes informing users about the data being collected, how it will be used, and their rights in relation to it. The term refers to the entire consent lifecycle, including storage and capture, data access requests, and deletion. 
             <br>
             <br>
             Consent management was first introduced by the GDPR in 2018, when companies were required to obtain permission before collecting personal information. Since then, it has become an essential component of data privacy compliance, with laws such as the CCPA, Quebec Law 25, and PIPEDA all incorporating consent management in some form (Husain, 2025). User privacy and data governance is becoming increasingly regulated. GDPR, CPRA, LGPD, and other region-specific privacy regulations affect exactly how you must obtain user consent and how the data can be used (What Is Consent Management?, n.d.).</p>
+        </div>  
+    </main>
+    
+    <!-- Modal for Sign-Up Form -->
+        <div id="consentModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Sign Up for Updates</h2>
+                <form id="signupForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label>
+                        <input type="checkbox" id="consent" name="consent" required>
+                        I consent to the processing of my personal data for the purpose of receiving the requested materials or communications.
+                        <input type="checkbox" id="privacy_policy" name="privacy_policy" required>
+                        I confirm that I have read and agree to the Privacy Policy and Terms of Service.
+                    </label>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
 
-    </main>
 </body>
 </html>
