@@ -31,7 +31,8 @@
                 
                 // Optional: Alert user or handle form data (e.g., send to server)
                 alert('Thank you for signing up! Your consent has been recorded.');
-            } else {
+            } 
+            else {
                 alert('Please check the consent box to proceed.');
             }
         });
